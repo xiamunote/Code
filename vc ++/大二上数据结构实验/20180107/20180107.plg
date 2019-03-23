@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 20180107 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP7A75.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/20180107.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"D:\文件\编程\大二上数据结构实验\20180107\2018010701.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP7A75.tmp" 
+<h3>Output Window</h3>
+Compiling...
+2018010701.cpp
+D:\文件\编程\大二上数据结构实验\20180107\2018010701.cpp(158) : error C2039: 'Pop_back' : is not a member of 'Queue<struct Service>'
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+2018010701.obj - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,12 @@
+com\vp\controller\BookTypeController.class
+com\vp\pojo\BookInfo.class
+com\vp\service\impl\BookInfoServiceImpl.class
+com\vp\converter\DateConverter.class
+com\vp\pojo\BookType.class
+com\vp\service\BookInfoService.class
+com\vp\util\ImageUpload.class
+com\vp\dao\BookInfoMapper.class
+com\vp\controller\BookInfoController.class
+com\vp\service\impl\BookTypeServiceImpl.class
+com\vp\service\BookTypeService.class
+com\vp\dao\BookTypeMapper.class

@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 2017110901 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP5553.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/2017110901.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\文件\编程\大二上数据结构作业\20171109\2017110901.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP5553.tmp" 
+<h3>Output Window</h3>
+Compiling...
+2017110901.cpp
+d:\文件\编程\大二上数据结构作业\20171109\graph.h(48) : error C2872: 'ostream' : ambiguous symbol
+        d:\文件\编程\大二上数据结构作业\20171109\2017110901.cpp(19) : see reference to class template instantiation 'Graph<char>' being compiled
+d:\文件\编程\大二上数据结构作业\20171109\graph.h(48) : error C2872: 'ostream' : ambiguous symbol
+        d:\文件\编程\大二上数据结构作业\20171109\2017110901.cpp(19) : see reference to class template instantiation 'Graph<char>' being compiled
+d:\文件\编程\大二上数据结构作业\20171109\graph.h(49) : error C2872: 'istream' : ambiguous symbol
+        d:\文件\编程\大二上数据结构作业\20171109\2017110901.cpp(19) : see reference to class template instantiation 'Graph<char>' being compiled
+d:\文件\编程\大二上数据结构作业\20171109\graph.h(49) : error C2872: 'istream' : ambiguous symbol
+        d:\文件\编程\大二上数据结构作业\20171109\2017110901.cpp(19) : see reference to class template instantiation 'Graph<char>' being compiled
+d:\文件\编程\大二上数据结构作业\20171109\2017110901.cpp(21) : error C2872: 'cout' : ambiguous symbol
+d:\文件\编程\大二上数据结构作业\20171109\2017110901.cpp(25) : error C2872: 'cout' : ambiguous symbol
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+2017110901.obj - 6 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

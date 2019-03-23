@@ -1,0 +1,140 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 2017032001 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPAB70.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/2017032001.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\文件\编程\20170320\2017032001.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPAB70.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPAB71.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/2017032001.pdb" /debug /machine:I386 /out:"Debug/2017032001.exe" /pdbtype:sept 
+".\Debug\2017032001.obj"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPAB71.tmp"
+<h3>Output Window</h3>
+Compiling...
+2017032001.cpp
+d:\文件\编程\20170320\seqlist_class.h(6) : error C2143: syntax error : missing ';' before '*'
+d:\文件\编程\20170320\seqlist_class.h(6) : error C2501: 'Type' : missing storage-class or type specifiers
+d:\文件\编程\20170320\seqlist_class.h(6) : error C2501: 'data' : missing storage-class or type specifiers
+d:\文件\编程\20170320\seqlist_class.h(16) : error C2143: syntax error : missing ',' before '&'
+d:\文件\编程\20170320\seqlist_class.h(16) : error C2059: syntax error : '&'
+d:\文件\编程\20170320\seqlist_class.h(17) : error C2143: syntax error : missing ',' before '&'
+d:\文件\编程\20170320\seqlist_class.h(17) : error C2059: syntax error : '&'
+d:\文件\编程\20170320\seqlist_class.h(20) : error C2143: syntax error : missing ';' before '&'
+d:\文件\编程\20170320\seqlist_class.h(20) : error C2501: 'Type' : missing storage-class or type specifiers
+d:\文件\编程\20170320\seqlist_class.h(20) : error C2501: '[]' : missing storage-class or type specifiers
+d:\文件\编程\20170320\seqlist_class.h(21) : error C2143: syntax error : missing ';' before '&'
+d:\文件\编程\20170320\seqlist_class.h(21) : error C2501: '[]' : missing storage-class or type specifiers
+d:\文件\编程\20170320\seqlist_class.h(23) : error C2143: syntax error : missing ';' before '&'
+d:\文件\编程\20170320\seqlist_class.h(23) : error C2734: 'Type' : const object must be initialized if not extern
+d:\文件\编程\20170320\seqlist_class.h(23) : error C2086: 'Type' : redefinition
+d:\文件\编程\20170320\seqlist_class.h(23) : error C2501: 'Getdata' : missing storage-class or type specifiers
+d:\文件\编程\20170320\seqlist_class.h(27) : error C2143: syntax error : missing ';' before '*'
+d:\文件\编程\20170320\seqlist_class.h(27) : error C2501: 'Type' : missing storage-class or type specifiers
+d:\文件\编程\20170320\seqlist_class.h(27) : error C2501: 'Begin' : missing storage-class or type specifiers
+d:\文件\编程\20170320\seqlist_class.h(27) : warning C4183: 'Begin': member function definition looks like a ctor, but name does not match enclosing class
+d:\文件\编程\20170320\seqlist_class.h(28) : error C2143: syntax error : missing ';' before '*'
+d:\文件\编程\20170320\seqlist_class.h(28) : error C2734: 'Type' : const object must be initialized if not extern
+d:\文件\编程\20170320\seqlist_class.h(28) : error C2086: 'Type' : redefinition
+d:\文件\编程\20170320\seqlist_class.h(28) : error C2501: 'Begin' : missing storage-class or type specifiers
+d:\文件\编程\20170320\seqlist_class.h(28) : warning C4183: 'Begin': member function definition looks like a ctor, but name does not match enclosing class
+d:\文件\编程\20170320\seqlist_class.h(29) : error C2143: syntax error : missing ';' before '*'
+d:\文件\编程\20170320\seqlist_class.h(29) : error C2501: 'Type' : missing storage-class or type specifiers
+d:\文件\编程\20170320\seqlist_class.h(29) : error C2501: 'End' : missing storage-class or type specifiers
+d:\文件\编程\20170320\seqlist_class.h(29) : warning C4183: 'End': member function definition looks like a ctor, but name does not match enclosing class
+d:\文件\编程\20170320\seqlist_class.h(30) : error C2143: syntax error : missing ';' before '*'
+d:\文件\编程\20170320\seqlist_class.h(30) : error C2734: 'Type' : const object must be initialized if not extern
+d:\文件\编程\20170320\seqlist_class.h(30) : error C2086: 'Type' : redefinition
+d:\文件\编程\20170320\seqlist_class.h(30) : error C2501: 'End' : missing storage-class or type specifiers
+d:\文件\编程\20170320\seqlist_class.h(30) : warning C4183: 'End': member function definition looks like a ctor, but name does not match enclosing class
+d:\文件\编程\20170320\seqlist_class.h(34) : error C2758: 'Type' : must be initialized in constructor base/member initializer list
+        d:\文件\编程\20170320\seqlist_class.h(21) : see declaration of 'Type'
+d:\文件\编程\20170320\seqlist_class.h(35) : error C2065: 'data' : undeclared identifier
+d:\文件\编程\20170320\seqlist_class.h(35) : error C2061: syntax error : identifier 'Type'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : warning C4390: ';' : empty controlled statement found; is this the intent?
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : error C2143: syntax error : missing ';' before '{'
+d:\文件\编程\20170320\seqlist_class.h(37) : fatal error C1003: error count exceeds 100; stopping compilation
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+2017032001.exe - 102 error(s), 5 warning(s)
+</pre>
+</body>
+</html>

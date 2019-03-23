@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.tarena.tts.abs.entity.Airport" table="airport" catalog="t_abs">
+        <id name="airportId" type="integer">
+            <column name="airport_id" />
+            <generator class="identity" />
+        </id>
+        <property name="airportName" type="string">
+            <column name="airport_name" length="20" />
+        </property>
+        <property name="provinceId" type="integer">
+            <column name="province_id" />
+        </property>
+        <property name="cityId" type="integer">
+            <column name="city_id" />
+        </property>
+        <property name="airportFullName" type="string">
+            <column name="airport_full_name" length="20" not-null="true" />
+        </property>
+        <property name="airportCode" type="string">
+            <column name="airport_code" length="3" not-null="true" unique="true" />
+        </property>
+        <property name="departureRoutesNum" type="integer">
+            <column name="departure_routes_num" />
+        </property>
+        <property name="arrivalRoutesNum" type="integer">
+            <column name="arrival_routes_num" />
+        </property>
+        <property name="airportGrand" type="string">
+            <column name="airport_grand" length="2" />
+        </property>
+        <property name="departureFlightNumPerWeek" type="integer">
+            <column name="departure_flight_num_per_week" />
+        </property>
+        <property name="arrivalFlightNumPerWeek" type="integer">
+            <column name="arrival_flight_num_per_week" />
+        </property>
+    </class>
+</hibernate-mapping>

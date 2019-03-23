@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="preorder" extends="struts-default">
+		
+		<!-- 定义拦截器 -->
+		<interceptors>
+			<interceptor name="some"
+			class="com.tarena.tts.abs.action.interceptor.PreorderInterecptor" />
+		</interceptors>
+		
+		
+		<action name="getPreorder" 
+		class="com.tarena.tts.abs.action.PreorderAction">
+			<interceptor-ref name="some" />
+			<interceptor-ref name="basicStack" />
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/search/preorder.jsp
+			</result>
+			<result name="intercept">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/login.jsp
+			</result>
+		</action>
+	</package>
+</struts>

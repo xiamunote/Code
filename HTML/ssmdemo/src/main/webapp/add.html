@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增</title>
+    <script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="/js/jquery.form.js"></script>
+    <script type="text/javascript" src="/js/load.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            queryBookType();
+        });
+
+        function uploadImage()
+        {
+            var  obj={
+                url:"/uploadImage.action",
+                type:"post",
+                dataType:"json",
+                success:function (data) {
+              $("#img").attr("src",data);
+              $("#pic").val(data);
+                }
+            }
+            $("#imm").ajaxSubmit(obj);
+
+        }
+
+    </script>
+</head>
+<body>
+<div id="body">
+    <div style="margin: 0px auto; width: 500px;">
+        <form id="imm" action="/BookInfo/add.action" method="post"  enctype="multipart/form-data" >
+            <table border="1px" style="text-align: center;">
+                <tr>
+                    <td>图书编号</td>
+                    <td><input id="code" name="bookCode" ></td>
+                </tr>
+                <tr>
+                    <td>图书名称</td>
+                    <td><input name="bookName"></td>
+                </tr>
+                <tr>
+                    <td>图书分类</td>
+                    <td style="text-align: left;">
+                        <select id="bookType" name="bookType.id">
+                        <option value="0">全部</option>
+                    </select>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>作者</td>
+                    <td><input name="bookAuthor"></td>
+                </tr>
+                <tr>
+                    <td>出版社</td>
+                    <td><input name="publishPress"></td>
+                </tr>
+                <tr>
+                    <td>出版时间</td>
+                    <td><input type="date" name="publishDate"></td>
+                </tr>
+                <tr>
+                    <td>图片上传</td>
+                    <td><img id="img" src=""><!-- 显示图片的 -->
+                        <input name="fileImage" type="file" onchange="uploadImage();">
+                        <input type="hidden" name="imagepath" id="pic"  >
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="提交"> <input
+                            type="button" value="取消"></td>
+
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+</div>
+
+</body>
+</html>

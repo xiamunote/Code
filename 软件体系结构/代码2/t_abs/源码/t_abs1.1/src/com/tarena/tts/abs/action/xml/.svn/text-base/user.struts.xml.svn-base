@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="user" extends="json-default">
+		<action name="login"
+		class="com.tarena.tts.abs.action.UserLoginAction" >
+			<result name="success">
+				${pageContext.request.contextPath}/index.jsp
+			</result>
+			<result name="failure" type="redirect">
+				loginPage.action
+			</result>
+		</action>
+		
+		<action name="logout"
+		class="com.tarena.tts.abs.action.UserLogoutAction" >
+			<result name="success">
+				${pageContext.request.contextPath}/index.jsp
+			</result>
+		</action>
+		
+		<!-- 快速注册 -->
+		<action name="register01" 
+		class="com.tarena.tts.abs.action.UserRegister01Action" >
+			<result name="success" type="redirectAction">
+				userInfo
+			</result>
+		</action>
+		
+		<!-- 完整注册 -->
+		<action name="register02" 
+		class="com.tarena.tts.abs.action.UserRegister02Action" >
+			<result name="success" type="redirectAction">
+				userInfo
+			</result>
+		</action>
+		
+		<action name="checkUser" 
+		class="com.tarena.tts.abs.action.UserCheckAction">
+			<result name="success" type="json">
+				<param name="root">ok</param>
+			</result>
+		</action>
+		
+		<!-- 修改用户信息表单显示 -->
+		<action name="updateUserForm" 
+		class="com.tarena.tts.abs.action.UpdateUserFormAction">
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/userinfo_modify.jsp
+			</result>
+		</action>
+		
+		<!-- 修改用户信息 -->
+		<action name="updateUser" 
+		class="com.tarena.tts.abs.action.UpdateUserAction">
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/userinfo_modify_ok.jsp
+			</result>
+		</action>
+		
+	</package>
+</struts>

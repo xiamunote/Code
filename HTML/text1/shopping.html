@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>操作当当购物车页面</title>
+    <link type="text/css" rel="stylesheet" href="css/cartStyle.css" />
+</head>
+<body>
+
+<div class="content">
+    <div class="logo">
+        <img src="images/dd_logo.jpg"><span onclick="close_plan();">关闭</span>
+    </div>
+    <div class="cartList" id="cartList">
+        <ul>
+            <li>商品图片</li>
+            <li>商品信息</li>
+            <li>单价</li>
+            <li>数量</li>
+            <li>总价</li>
+            <li>操作</li>
+        </ul>
+        <ul>
+            <li><img src="images/dog.jpg"></li>
+            <li>我和狗狗活下来了</li>
+            <li>¥<input type="text" name="price" value="21.90"></li>
+            <li><input type="button" name="minus" value="-" onclick="minus(0);"><input type="text" name="amount" value="1"><input type="button" name="plus" value="+" onclick="plus(0);"></li>
+            <li id="price0" name = "prices">21.90</li>
+            <li><p  onclick="collection();">移入收藏</p><p>删除</p></li>
+        </ul>
+        <ul>
+            <li><img src="images/mai.jpg"></li>
+            <li>灰霾来了怎么办</li>
+            <li>¥<input type="text" name="price" value="24.00"></li>
+            <li><input type="button" name="minus" value="-" onclick="minus(1);"><input type="text" name="amount" value="1"><input type="button" name="plus" value="+" onclick="plus(1);"></li>
+            <li id="price1" name = "prices">24.00</li>
+            <li><p  onclick="collection();">移入收藏</p><p>删除</p></li>
+        </ul>
+        <ol>
+            <li>商品总计：<span id="totalPrice"></span></li>
+            <li><span>结 算</span></li>
+        </ol>
+    </div>
+</div>
+</body>
+<script>
+	function minus(num){
+		//获取所有表示数量的文本框
+		var counts = document.getElementsByName("amount");
+		//获取当前商品的数量
+		var count = counts[num].value;
+		if(count < 2){
+			counts[num].value = 1;
+		}
+		else{
+			counts[num].value -= 1;
+		}
+		//调用计算单个商品总价的函数
+		onCount(num,counts[num].value);
+		//调用计算所有商品总价函数
+		computeAll();
+	}
+	
+	function plus(num){
+		//获取所有表示数量的文本框
+		var counts = document.getElementsByName("amount");
+		//获取当前商品的数量
+		var count = counts[num].value;
+		counts[num].value = parseInt(counts[num].value) + 1;
+		//调用计算单个商品总价的函数
+		onCount(num,counts[num].value);
+		//调用计算所有商品总价函数
+		computeAll();
+	}
+	
+	function onCount(num,count){
+		//根据name获取单价
+		var prices = document.getElementsByName("price");
+		//获取商品的单价
+		var price = prices[num].value;
+		//获取商品的总价
+		var sum = price * count;
+		sum = sum.toFixed(2);
+		//把总价添加到控件上
+		var id = "price" + num;
+		document.getElementById(id).innerHTML = sum;
+	}
+	function computeAll(){
+		var prices = document.getElementsByName("prices");
+		var sums = 0;
+		for(var i = 0; i < prices.length; i ++){
+			sums += parseFloat(prices[i].innerHTML)
+		}
+		sums = sums.toFixed(2);
+		document.getElementById("totalPrice").innerHTML = sums;
+	}
+	
+	window.onload = function(){
+		computeAll();
+    }
+</script>
+</html>

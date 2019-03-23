@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="account" extends="json-default">
+		
+		<action name="userInfo"
+			class="com.tarena.tts.abs.action.UserInfoAction">
+			<result name="success">
+			${pageContext.request.contextPath}/WEB-INF/jsp/account/userinfo.jsp
+			</result>
+		</action>
+
+		<action name="modifyPassword"
+		class="com.tarena.tts.abs.action.ModifyPasswordAction">
+			<result name="success" type="json">
+				<param name="root">ok</param>
+			</result>
+		</action>
+		
+		<!-- 检查用户密码是否正确 -->
+		<action name="checkPassword"
+		class="com.tarena.tts.abs.action.CheckUserPasswordAction">
+			<result name="success" type="json">
+				<param name="root">ok</param>
+			</result>
+		</action>
+		
+	</package>
+</struts>

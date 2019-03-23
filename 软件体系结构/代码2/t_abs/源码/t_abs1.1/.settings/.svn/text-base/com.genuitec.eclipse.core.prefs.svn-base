@@ -1,0 +1,7 @@
+#Fri Jun 08 11:00:49 CST 2012
+=\=\=\=\=\=\=
+<<<<<<<=.mine
+>>>>>>>=.r2854
+eclipse.preferences.version=1
+validator.Checked=WebRoot/WEB-INF/jsp/online_help.jsp,src/com/tarena/tts/abs/dao/impl/UserDAOImpl.java,WebRoot/WEB-INF/jsp/account/myorders.jsp,WebRoot/WEB-INF/jsp/account/register_choose.jsp,WebRoot/WEB-INF/jsp/account/password_modify_ok.jsp,WebRoot/WEB-INF/jsp/search/submitorder.jsp,WebRoot/WEB-INF/jsp/account/userinfo_modify.jsp,WebRoot/search/multiway.jsp,WebRoot/index.jsp,WebRoot/WEB-INF/jsp/account/register_company.jsp,WebRoot/WEB-INF/jsp/news.jsp,WebRoot/WEB-INF/jsp/search/flightstatus.jsp,WebRoot/WEB-INF/jsp/search/orderdetail.jsp,src/com/tarena/tts/abs/action/UserValidatorAction-validation.xml,WebRoot/WEB-INF/jsp/common/left.jsp,WebRoot/WEB-INF/jsp/account/passengers.jsp,WebRoot/WEB-INF/jsp/account/userinfo_modify_ok.jsp,WebRoot/account/register_user.jsp,WebRoot/WEB-INF/jsp/account/userinfo.jsp,WebRoot/WEB-INF/jsp/search/multiway.jsp,WebRoot/index111.jsp,src/com/tarena/tts/abs/action/xml/page.struts.xml,WebRoot/WEB-INF/jsp/account/password_modify.jsp,WebRoot/index_logined.jsp,WebRoot/account/login.jsp,WebRoot/WEB-INF/jsp/search/preorder.jsp,WebRoot/WEB-INF/jsp/about.jsp,WebRoot/WEB-INF/jsp/map.jsp,WebRoot/WEB-INF/jsp/account/register_user.jsp,WebRoot/WEB-INF/jsp/account/login.jsp,WebRoot/WEB-INF/jsp/search/searchflight.jsp
+validator.Unchecked=

@@ -1,0 +1,5 @@
+<! -- config.xml-- >
+<? xml version = "1.0" ?>
+<config>
+    <classname> factory_method_pattern.FileLoggerFactory </clsssName>
+</config>

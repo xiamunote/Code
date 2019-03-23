@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="loginForm"
+			type="org.apache.struts.action.DynaActionForm">
+			<form-property name="username" type="java.lang.String"></form-property>
+			<form-property name="password" type="java.lang.String"></form-property>
+			<form-property name="ismanager" type="java.lang.String"></form-property>
+
+		</form-bean>
+
+		<form-bean name="userInfo"
+			type="org.apache.struts.action.DynaActionForm">
+			<form-property name="username" type="java.lang.String"></form-property>
+			<form-property name="password" type="java.lang.String"></form-property>
+			<form-property name="ismanager" type="java.lang.String"></form-property>
+			<form-property name="realname" type="java.lang.String"></form-property>
+			<form-property name="sex" type="java.lang.String"></form-property>
+			<form-property name="age" type="java.lang.Long"></form-property>
+			<form-property name="email" type="java.lang.String"></form-property>
+		</form-bean>
+		
+		
+		
+		
+		<form-bean name="flight"
+			type="org.apache.struts.action.DynaActionForm">
+			<form-property name="flightid" type="java.lang.Long"></form-property>
+			<form-property name="flightno" type="java.lang.String"></form-property>
+			<form-property name="flighttype" type="java.lang.String"></form-property>
+			<form-property name="qdzhan" type="java.lang.String"></form-property>
+			<form-property name="zhdzhan" type="java.lang.String"></form-property>
+			<form-property name="leavetime" type="java.lang.String"></form-property>
+			<form-property name="arrivetime" type="java.lang.String"></form-property>
+			<form-property name="softtotal" type="java.lang.Long"></form-property>
+			<form-property name="hardtotal" type="java.lang.Long"></form-property>
+			<form-property name="softprice" type="java.lang.Long"></form-property>
+			<form-property name="hardprice" type="java.lang.Long"></form-property>
+		</form-bean>
+	</form-beans>
+	<global-exceptions />
+	<global-forwards>
+	
+		<forward name="destine" path="/user/tdestine.jsp"></forward>
+		<forward name="header" path="/user/header.jsp"></forward>
+		<forward name="ubody" path="/user/ubody.jsp"></forward>
+		<forward name="utiles" path="/user/utiles.jsp"></forward>
+		<forward name="ushowallTiles" path="/user/ushowallTiles.jsp"></forward>
+
+		<forward name="bouncetine" path="/user/tboucetine.jsp"></forward>
+
+		<forward name="flightManager1" path="flightManager.do?method=listFlight" redirect="true"></forward>
+		
+		<forward name="index" path="/index.jsp"></forward>
+		<forward name="regist" path="/regist.jsp"></forward>
+		<forward name="leftMana" path="/manager/leftMana.jsp"></forward>
+		<forward name="ushowallTiles1"
+			path="/manager/ushowallTiles.jsp">
+		</forward>
+		<forward name="flightManager"
+			path="/manager/tflightmanager.jsp">
+		</forward>
+
+		<forward name="addflight" path="/manager/taddflight.jsp"></forward>
+
+		<forward name="updateflight"
+			path="/manager/tupdateflight.jsp">
+		</forward>
+
+		<forward name="reserflight" path="/user/ureserbody.jsp"></forward>
+
+		<forward name="resersucc" path="/user/uresersucc.jsp"></forward>
+
+		<forward name="checkflight" path="/manager/tcheckflight.jsp"></forward>
+
+		<forward name="usercheckflight" path="/user/tcheckflight.jsp">
+		</forward>
+
+		<forward name="selectLMess" path="/user/tselectLMess.jsp"></forward>
+		
+		<forward name="reserselect" path="/user/reserselect.jsp"></forward>
+		
+		<forward name="treserselect" path="/user/treserselect.jsp"></forward>
+
+		<forward name="managerLMess"
+			path="/manager/tmanagerLMess.jsp">
+		</forward>
+		
+		<forward name="listall" path="/reser.do?method=listall" redirect="true"></forward>
+		
+		<forward name="listuser" path="/manager/listuser.jsp"></forward>
+		
+		<forward name="adduser" path="/manager/adduser.jsp"></forward>
+	</global-forwards>
+	<action-mappings>
+		<action path="/login" type="action.LoginAction" name="loginForm"
+			parameter="method">
+		</action>
+		<action path="/regist" type="action.LoginAction" name="userInfo"
+			parameter="method">
+		</action>
+
+		<action path="/flightManager" type="action.FlightAction"
+			parameter="method">
+		</action>
+
+		<action path="/add" type="action.FlightAction"
+			parameter="method">
+		</action>
+		<action path="/addflight" type="action.FlightAction"
+			parameter="method" name="flight">
+		</action>
+		<action path="/deleteflight" type="action.FlightAction"
+			parameter="method">
+		</action>
+		<action path="/modify" type="action.FlightAction"
+			parameter="method">
+		</action>
+
+		<action path="/updateflight" type="action.FlightAction"
+			parameter="method" name="flight">
+		</action>
+
+		<action path="/reserflight" type="action.CommUserAction"
+			parameter="method">
+		</action>
+		
+		<action path="/boucetine" type="action.CommUserAction"
+			parameter="method">
+		</action>
+
+		<action path="/reser" type="action.CommUserAction"
+			parameter="method">
+		</action>
+
+		<action path="/managercheckflight" type="action.FlightAction"
+			parameter="method">
+		</action>
+
+		<action path="/usercheckflight" type="action.CommUserAction"
+			parameter="method">
+		</action>
+
+		<action path="/selectuserFMess" type="action.CommUserAction"
+			parameter="method">
+		</action>
+
+		<action path="/managerselect" type="action.FlightAction"
+			parameter="method">
+		</action>
+
+
+		<action path="/usermanager" type="action.UserManagerAction"
+			parameter="method">
+			
+		</action>
+
+		<action path="/modifyUser" type="action.UserManagerAction"
+			parameter="method">
+			<forward name="updateuser" path="/manager/updateuser.jsp"></forward>
+		</action>
+
+		<action path="/updateuser" type="action.UserManagerAction"
+			parameter="method" name="userInfo">
+			
+		</action>
+		
+		<action path="/addU" type="action.UserManagerAction" parameter="method"></action>
+		
+		<action path="/adduser" type="action.UserManagerAction" parameter="method" name="userInfo"></action>
+		
+		<action path="/deleteuser" type="action.UserManagerAction" parameter="method"></action>
+	</action-mappings>
+	<message-resources
+		parameter="com.yourcompany.struts.ApplicationResources" />
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/WEB-INF/validator-rules.xml,
+                                                  /WEB-INF/validation.xml" />
+	</plug-in>
+
+</struts-config>
+

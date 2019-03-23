@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <!-- 设置为开发模式(非发布模式，出错后会出很多信息，便于调试) -->
+    <constant name="struts.devMode" value="true"/>
+    <!-- 国际化 -->
+    <constant name="struts.i18n.reload" value="true"/>
+    <!-- 设置struts配置文件自动加载 -->
+    <constant name="struts.configuration.xml.reload" value="true"/>
+    <!-- 不使用浏览器缓存 -->
+    <constant name="struts.serve.static.browserCache" value="false"/>
+    <!-- 不使用其他主题，设置struts的主题为simple -->
+    <constant name="struts.ui.theme" value="simple"/>
+    
+	<include file="com/tarena/tts/abs/action/xml/flight.struts.xml" />
+	<include file="com/tarena/tts/abs/action/xml/city.struts.xml"></include>
+	<include file="com/tarena/tts/abs/action/xml/branch.struts.xml"></include>
+	<include file="com/tarena/tts/abs/action/xml/user.struts.xml"></include>
+	<include file="com/tarena/tts/abs/action/xml/checkcode.struts.xml"></include>
+	<include file="com/tarena/tts/abs/action/xml/account.struts.xml"></include>
+	<include file="com/tarena/tts/abs/action/xml/page.struts.xml"></include>
+	<include file="com/tarena/tts/abs/action/xml/order.struts.xml"></include>
+	<include file="com/tarena/tts/abs/action/xml/preorder.struts.xml"></include>
+	<include file="com/tarena/tts/abs/action/xml/passenger.struts.xml"></include>
+</struts>

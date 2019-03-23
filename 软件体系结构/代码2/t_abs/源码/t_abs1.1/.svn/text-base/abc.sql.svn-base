@@ -1,0 +1,617 @@
+
+001
+############################################################################
+#使用子查询方式查询航班，共10+1种情况（不推荐，因为在程序中不好拼接SQL）
+#############################################################################
+## 1. 查询从'北京-首都机场'起飞的所有航班的id
+# 1.1 查找'北京-首都机场'的airport_id
+	select airport_id from airport where airport_full_name = "北京-首都机场";
+# 1.2 查找从'北京-首都机场'起飞的航线ID(route_id)	
+	select route_id from route
+	where from_airport_id in
+		(select airport_id 
+		from airport 
+		where airport_full_name = "北京-首都机场");
+# 1.3 查找从'北京-首都机场'起飞的航班ID(flight_id)
+	select flight_id from flight
+	where route_id in
+		(select route_id from route
+		where from_airport_id in
+			(select airport_id from airport 
+			where airport_full_name = "北京-首都机场"));
+# hql
+	from Flight
+	where routeId in
+		(from Route
+		where fromAirportId in
+			(from Airport
+			where airportFullName = ? )
+
+
+#################
+## 2.  查找从'北京-首都机场'起飞，降落到'上海-虹桥机场'的所有航班ID(flight_id)
+# 2.1 查找'北京-首都机场'的airport_id
+	select airport_id from airport where airport_full_name = "北京-首都机场";
+# 2.2 查找'上海-虹桥机场'的airport_id
+	select airport_id from airport where airport_full_name = "上海-虹桥机场";	
+# 2.3 查找从'北京-首都机场'起飞，降落到'上海-虹桥机场'的航线ID(route_id)
+	select route_id from route
+	where from_airport_id in 
+			(select airport_id from airport 
+			where airport_full_name = "北京-首都机场")
+		and
+		to_airport_id in 
+			(select airport_id from airport 
+			where airport_full_name = "上海-虹桥机场");
+# 2.4 查找从'北京-首都机场'起飞，降落到'上海-虹桥机场'的所有航班ID(flight_id)
+	select flight_id from flight
+	where route_id in
+		(select route_id from route
+			where 
+				from_airport_id in 
+					(select airport_id from airport 
+					where airport_full_name = "北京-首都机场")
+				and
+				to_airport_id in 
+					(select airport_id from airport 
+					where airport_full_name = "上海-虹桥机场")); 
+# hql
+	from Flight
+	where route_id in
+		(from Route
+			where fromAirportId in
+				(from Airport
+				where airportFullName = ? )
+				and
+				toAirportId in
+				(from Airport
+					where airportFullName = ? ))
+
+#################
+## 3. 查找起飞时间为"2010-10-25"的所有航班ID(flight_id)
+	select flight_id from flight
+	where fl_departure_date like "2010-10-25%";
+# hql
+	from Flight
+	where flDepartureDate like '?%'
+	
+	
+##################
+## 4. 查找从'广州-白云机场'起飞，
+		降落到'北京-首都机场'，
+		起飞时间为"2010-10-25"，
+		降落时间为"2010-10-25""的航班ID(flight_id)
+	
+	select flight_id from flight
+	where route_id in
+		(select route_id from route
+			where 
+				from_airport_id in 
+					(select airport_id from airport 
+					where airport_full_name = "广州-白云机场")
+				and
+				to_airport_id in 
+					(select airport_id from airport 
+					where airport_full_name = "北京-首都机场"))
+		and fl_departure_date like "2010-10-25%"
+		and fl_arrival_date like "2010-10-25%";
+		
+# hql
+	from Flight
+	where routeId in
+		(from Route
+		where fromAirportId in
+				(from Airport
+				where airportFullName = ? )
+			and		
+			toAirportId in
+				(from Airport
+				where airportFullName = ? ))
+		and flDepartureDate like ?
+		and flArrivalDate like ? 
+	
+
+002
+############################################################################
+#使用连接查询航班，共10+1种情况（推荐）
+#############################################################################
+
+#2.1 查询从“北京-首都机场”起飞的航班编号		1000 
+select flight_num from flight
+	where flight_id in ( 
+		select distinct f.flight_id from flight f , route r, airport a ,airport b
+			where 1=1 
+				and f.route_id = r.route_id
+				and a.airport_id = r.from_airport_id
+				and a.airport_full_name = "北京-首都机场"
+				
+				#and b.airport_id = r.to_airport_id
+				#and b.airport_full_name = ""
+				
+				#and f.fl_departure_date >= ""
+				#and f.fl_arrival_date <= ""
+	)
+
+############
+#2.2 查询从“北京-首都机场”起飞，降落到“重庆-江北机场”的航班编号	1100
+select flight_num from flight
+	where flight_id in ( 
+		select distinct f.flight_id from flight f , route r, airport a ,airport b
+			where 1=1 
+				and f.route_id = r.route_id
+				and a.airport_id = r.from_airport_id
+				and a.airport_full_name = "北京-首都机场"
+				
+				and b.airport_id = r.to_airport_id
+				and b.airport_full_name = "重庆-江北机场"
+				
+				#and f.fl_departure_date >= ""
+				#and f.fl_arrival_date <= ""
+	)
+
+
+#############
+#2.3 查询从“北京-首都机场”起飞，降落到“重庆-江北机场”，起飞时间大于等于“2010-10-27 10:25:00”的航班编号	1110
+select flight_num from flight
+	where flight_id in ( 
+		select distinct f.flight_id from flight f , route r, airport a ,airport b
+			where 1=1 
+				and f.route_id = r.route_id
+				and a.airport_id = r.from_airport_id
+				and a.airport_full_name = "北京-首都机场"
+				
+				and b.airport_id = r.to_airport_id
+				and b.airport_full_name = "重庆-江北机场"
+				
+				and f.fl_departure_date >= "2010-10-27 10:25:00"
+				#and f.fl_arrival_date <= ""
+	)
+
+############
+#2.4 查询从“北京-首都机场”起飞，降落到“重庆-江北机场”，起飞时间大于等于“2010-10-27 10:25:00”，降落时间小于等于“2010-10-27 12:15:00”的航班编号		1111
+select flight_num from flight
+	where flight_id in ( 
+		select distinct f.flight_id from flight f , route r, airport a ,airport b
+			where 1=1 
+				and f.route_id = r.route_id
+				and a.airport_id = r.from_airport_id
+				and a.airport_full_name = "北京-首都机场"
+				
+				and b.airport_id = r.to_airport_id
+				and b.airport_full_name = "重庆-江北机场"
+				
+				and f.fl_departure_date >= "2010-10-27 10:25:00"
+				and f.fl_arrival_date <= "2010-10-27 12:15:00"
+	)
+
+#############
+#2.5  查询降落到“北京-首都机场”的航班编号	0100
+select flight_num from flight
+	where flight_id in ( 
+		select distinct f.flight_id from flight f , route r, airport a ,airport b
+			where 1=1 
+				and f.route_id = r.route_id
+				
+				#and a.airport_id = r.from_airport_id
+				#and a.airport_full_name = ""
+				
+				and b.airport_id = r.to_airport_id
+				and b.airport_full_name = "北京-首都机场"
+				
+				#and f.fl_departure_date >= ""
+				#and f.fl_arrival_date <= ""
+	)
+
+
+###############
+#2.6 查询降落到“北京-首都机场”，降落时间为“2010-10-27 12:15:00”的航班编号		0110
+select flight_num from flight
+	where flight_id in ( 
+		select distinct f.flight_id from flight f , route r, airport a ,airport b
+			where 1=1 
+				and f.route_id = r.route_id
+				
+				#and a.airport_id = r.from_airport_id
+				#and a.airport_full_name = ""
+				
+				and b.airport_id = r.to_airport_id
+				and b.airport_full_name = "北京-首都机场"
+				
+				#and f.fl_departure_date >= ""
+				and f.fl_arrival_date <= "2010-10-27 12:15:00"
+	)
+
+
+#################
+#2.7 查询降落到“北京-首都机场”，起飞时间大于等于“2010-10-25 13:00:00” ， 降落时间小于等于“2010-10-27 12:15:00”的航班编号	0111
+select flight_num from flight
+	where flight_id in ( 
+		select distinct f.flight_id from flight f , route r, airport a ,airport b
+			where 1=1 
+				and f.route_id = r.route_id
+				
+				#and a.airport_id = r.from_airport_id
+				#and a.airport_full_name = ""
+				
+				and b.airport_id = r.to_airport_id
+				and b.airport_full_name = "北京-首都机场"
+				
+				and f.fl_departure_date >= "2010-10-25 13:00:00"
+				and f.fl_arrival_date <= "2010-10-27 12:15:00"
+	)
+
+
+###############
+#2.8 查询起飞时间大于等于“2010-10-29 10:25:00”的航班信息	0010
+select flight_num from flight
+	where flight_id in ( 
+		select distinct f.flight_id from flight f , route r, airport a ,airport b
+			where 1=1 
+				and f.route_id = r.route_id
+				
+				#and a.airport_id = r.from_airport_id
+				#and a.airport_full_name = ""
+				
+				#and b.airport_id = r.to_airport_id
+				#and b.airport_full_name = ""
+				
+				and f.fl_departure_date >= "2010-10-29 10:25:00"
+				#and f.fl_arrival_date <= ""
+	)
+
+
+#################
+#2.9 查询起飞时间大于等于“2010-10-29 10:25:00”，降落时间小于等于“2010-10-29 12:15:00”的航班信息	0011
+select flight_num from flight
+	where flight_id in ( 
+		select distinct f.flight_id from flight f , route r, airport a ,airport b
+			where 1=1 
+				and f.route_id = r.route_id
+				
+				#and a.airport_id = r.from_airport_id
+				#and a.airport_full_name = ""
+				
+				#and b.airport_id = r.to_airport_id
+				#and b.airport_full_name = ""
+				
+				and f.fl_departure_date >= "2010-10-29 10:25:00"
+				and f.fl_arrival_date <= "2010-10-29 12:15:00"
+	)
+
+
+###################
+#2.10 查询降落时间小于等于“2010-10-25 15:05:00”的航班信息	0001
+select flight_num from flight
+	where flight_id in ( 
+		select distinct f.flight_id from flight f , route r, airport a ,airport b
+			where f.route_id = r.route_id
+				
+				#and a.airport_id = r.from_airport_id
+				#and a.airport_full_name = ""
+				
+				#and b.airport_id = r.to_airport_id
+				#and b.airport_full_name = ""
+				
+				#and f.fl_departure_date >= ""
+				and f.fl_arrival_date <= "2010-10-25 15:05:00"
+	)
+	
+	
+####################
+#2.11 查询出所有航班		0000
+select flight_num from flight
+	where flight_id in ( 
+		select distinct f.flight_id from flight f , route r, airport a ,airport b
+			where 1=1 
+				and f.route_id = r.route_id
+				
+				#and a.airport_id = r.from_airport_id
+				#and a.airport_full_name = ""
+				
+				#and b.airport_id = r.to_airport_id
+				#and b.airport_full_name = ""
+				
+				#and f.fl_departure_date >= ""
+				#and f.fl_arrival_date <= "2010-10-25 15:05:00"
+	)
+
+
+#####
+#2.12 hql
+from Flight
+	where flightId in (
+		select distinct f.flightId from Flight f , Route r , Airport a , Airport b
+			where f.routeId = r.routeId
+			
+			and a.airportId = r.fromAirportId
+			and a.airportFullName = ?
+
+			and b.airportId = r.toAirportId
+			and b.airportFullName = ?
+			
+			and f.flDepartureDate >= ?
+			
+			and f.flArrivalDate <= ? )
+			
+
+########
+#2.13 查询出所有航班id						
+select * from flight where flight_id in (
+	select distinct f.flight_id
+	from flight f , route r , airport a , airport b
+	where f.route_id = r.route_id ); 
+
+
+
+003
+#######################################################################
+查询出
+	航班号
+	航班日期(yyyy-MM-dd)
+	起飞时间
+	到达时间
+	机型
+	飞机里程
+	当前最低价格
+被封装为对象Flihgt01
+#######################################################################
+
+#3.1查询格式化后的日期
+
+select date_format(fl_departure_date , '%Y-%m-%d') from flight;
+
+
+###########
+#3.2查询格式化后的时间
+select date_format(fl_departure_date ,'%H:%i') from flight;
+
+
+############
+#3.3
+查询出从"北京"出发的所有航班
+字段为
+	航班号
+	航班日期(yyyy-MM-dd)
+	起飞时间
+	到达时间
+	机型
+	飞机里程
+	当前最低价格（封装为对象Flight01）
+select f.flight_num , 
+		date_format(f.fl_departure_date ,'%Y-%m-%d') f_date ,  
+		date_format(f.fl_departure_date , '%H:%i') ,
+		date_format(f.fl_arrival_date , '%H:%i') ,
+		p.plane_model , 
+		r.route_distance , 
+		f.current_price
+from flight f , route r , plane p , airport a
+where f.route_id = r.route_id  
+	and f.plane_id = p.plane_id 
+	and a.airport_id = r.from_airport_id
+	and a.airport_full_name like '北京%'; 
+
+############
+#3.4
+查询出到达"上海"的所有航班
+字段为
+	航班号
+	航班日期(yyyy-MM-dd)
+	起飞时间
+	到达时间
+	机型
+	飞机里程
+	当前最低价格（封装为对象Flight01）
+select f.flight_num , 
+		date_format(f.fl_departure_date ,'%Y-%m-%d') f_date ,  
+		date_format(f.fl_departure_date , '%H:%i') ,
+		date_format(f.fl_arrival_date , '%H:%i') ,
+		p.plane_model , 
+		r.route_distance , 
+		f.current_price
+from flight f , route r , plane p , airport a
+where f.route_id = r.route_id  
+	and f.plane_id = p.plane_id 
+	and a.airport_id = r.to_airport_id
+	and a.airport_full_name like '上海%';
+
+############
+#3.5
+查询出"2012-05-03"从"北京"起飞的所有航班
+字段为
+	航班号
+	航班日期(yyyy-MM-dd)
+	起飞时间
+	到达时间
+	机型
+	飞机里程
+	当前最低价格（封装为对象Flight01）
+select f.flight_num , 
+		date_format(f.fl_departure_date ,'%Y-%m-%d') f_date ,  
+		date_format(f.fl_departure_date , '%H:%i') ,
+		date_format(f.fl_arrival_date , '%H:%i') ,
+		p.plane_model , 
+		r.route_distance , 
+		f.current_price
+from flight f , route r , plane p , airport a
+where f.route_id = r.route_id  
+	and f.plane_id = p.plane_id 
+	and a.airport_id = r.from_airport_id
+	and a.airport_full_name like '上海%'
+	and f.fl_departure_date >= '2012-5-03 00:00:00';
+	
+
+############
+#3.6
+查询出"2012-05-03 10:25:00"从"北京"起飞，"2012-05-03 12:15:00"降落到"上海"的航班
+字段为
+	航班号
+	航班日期(yyyy-MM-dd)
+	起飞时间
+	到达时间
+	机型
+	飞机里程
+	当前最低价格（封装为对象Flight01）
+select distinct 
+		f.flight_id , 
+		f.flight_num , 
+		date_format(f.fl_departure_date ,'%Y-%m-%d') f_date ,  
+		date_format(f.fl_departure_date , '%H:%i') ,
+		date_format(f.fl_arrival_date , '%H:%i') ,
+		p.plane_model , 
+		r.route_distance , 
+		f.current_price
+from flight f , route r , plane p , airport a1 , airport a2
+where f.route_id = r.route_id  
+	and f.plane_id = p.plane_id
+	 
+	and a1.airport_id = r.from_airport_id
+	and a1.airport_full_name like '北京%'
+	
+	and a2.airport_id = r.to_airport_id
+	and a2.airport_full_name like '上海%'
+	
+	and f.fl_departure_date >= '2012-05-03 10:25:00'
+	
+	and f.fl_arrival_date <= '2012-05-03 12:15:00';
+
+
+
+004
+#######################################################################
+查询出航班日期，始发机场，目的地机场，折扣，折扣价
+#######################################################################
+select f.flight_id , 
+		date_format(f.fl_departure_date ,'%m-%d') , 
+		c1.city_name , 
+		c2.city_name , 
+		f.current_discount , 
+		f.current_price
+from flight f , route r , airport a1 , airport a2 , city c1 , city c2
+where f.route_id = r.route_id
+	and r.from_airport_id = a1.airport_id
+	and r.to_airport_id = a2.airport_id
+	and a1.city_id = c1.city_id
+	and a2.city_id = c2.city_id
+	and f.current_discount <= 0.5
+	
+
+005
+#######################################################################
+查询出网点名称、所属地区、详细地址、联系电话
+#######################################################################
+select b.branch_name ,c.city_name , b.branch_address , b.branch_telephone1
+from branch b , city c
+where b.city_id = c.city_id
+
+
+006
+#######################################################################
+查询出所有航班信息，封装为Flight01
+#######################################################################
+select f.flight_num , 
+		date_format(f.fl_departure_date ,'%Y-%m-%d') f_date ,  
+		date_format(f.fl_departure_date , '%H:%i') ,
+		date_format(f.fl_arrival_date , '%H:%i') ,
+		p.plane_model , 
+		r.route_distance , 
+		f.current_price
+from flight f , route r , plane p , airport a
+where f.route_id = r.route_id  
+	and f.plane_id = p.plane_id 
+	and a.airport_id = r.from_airport_id;
+
+
+
+007
+#######################################################################
+根据订单id，订票日期，旅客姓名，订单状态，起飞城市，降落城市
+查询出订单信息，封装为TicketOrder01对象
+private long orderId;		//订单号
+private String flightNum;	//航班编号
+private String flDate;		//航班日期
+private String flTime;		//起飞时间
+private Integer seatsOrder;	//订座编码
+private double totalPrice;	//订单总额(机票价格+燃油税+机场建设税)
+private String orderState;	//订单状态
+private Date orderDate;		//订票时间
+#######################################################################
+
+select  distinct
+		o.order_id , 
+		f.flight_num ,
+		date_format(f.fl_departure_date ,'%Y-%m-%d') ,
+		date_format(f.fl_departure_date , '%H:%i') ,
+		o.seats_order , 
+		o.ticket_price+o.append_tax1+append_tax2 , 
+		o.order_state ,
+		o.order_date
+from ticket_order o , flight f , passenger p , route r , airport a1 , airport a2
+where 
+	o.flight_id = f.flight_id
+	and o.passenger_id = p.psg_id
+	and f.route_id = r.route_id
+	
+	#and o.order_id = 1
+	
+	#and o.order_date >  '2012-05-15 00:00:00'
+
+	#and o.order_date <  '2012-05-23 00:00:00'
+	
+	#and o.order_state = 'P'
+	
+	#and p.psg_name = '张晓明'
+
+	#and r.from_airport_id = a1.airport_id
+	#and a1.airport_full_name like '北京%'
+	
+	and r.to_airport_id = a2.airport_id
+	and a2.airport_full_name like '上海%'
+	
+	
+	
+008
+########################################################
+
+select 
+		t.order_id , 			
+		t.order_state , 		
+		t.order_money , 		#订单总金额
+		now() , 				#预定日期
+		u.user_name , 			
+		u.user_telephone , 
+		u.user_email
+from ticket_order t , user u
+where
+	t.user_id = u.user_id
+
+
+
+
+
+update
+        t_abs.user 
+    set
+        user_password='8d'
+    where
+        user_id=1
+
+
+
+##################################################
+获得当前系统时间 加一天
+select date_add(NOW(), interval 1 DAY)  from dual;
+
+#date_add() 增加
+#date_sub()减少
+
+#month 月份
+#minute 分钟
+#second 秒
+
+
+
+
+
+
+
+

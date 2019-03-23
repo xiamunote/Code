@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TicketSaler", ".", "{ACB7DFBE-6CB0-4385-B377-9CBBBDA7F601}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/TicketSaler"
+		Debug.AspNetCompiler.PhysicalPath = "E:\Works\8月18日\51CTO下载-ASP.NET项目开发案例精粹20+机票预订系统源码\chap20\20 SQL Server 2000\TicketSaler\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TicketSaler\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TicketSaler"
+		Release.AspNetCompiler.PhysicalPath = "E:\Works\8月18日\51CTO下载-ASP.NET项目开发案例精粹20+机票预订系统源码\chap20\20 SQL Server 2000\TicketSaler\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TicketSaler\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3741"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACB7DFBE-6CB0-4385-B377-9CBBBDA7F601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB7DFBE-6CB0-4385-B377-9CBBBDA7F601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

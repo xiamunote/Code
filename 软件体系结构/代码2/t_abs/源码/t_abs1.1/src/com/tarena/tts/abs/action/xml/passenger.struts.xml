@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="passenger" extends="json-default">
+
+		<action name="passengerList"
+			class="com.tarena.tts.abs.action.PassengerListAction">
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/passengers.jsp
+			</result>
+		</action>
+
+		<action name="updatePassenger"
+			class="com.tarena.tts.abs.action.UpdatePassengerAction">
+			<result name="success" type="redirectAction">
+				passengerList
+			</result>
+		</action>
+
+		<action name="deletePassenger"
+			class="com.tarena.tts.abs.action.DeletePassengerAction">
+			<result name="success" type="redirectAction">
+				passengerList
+			</result>
+		</action>
+		
+		<action name="findThePassenger"
+			class="com.tarena.tts.abs.action.FindPassengerAction">
+			<result name="success" type="json">
+				<param name="root">passenger</param>
+			</result>
+		</action>
+
+	</package>
+</struts>
+

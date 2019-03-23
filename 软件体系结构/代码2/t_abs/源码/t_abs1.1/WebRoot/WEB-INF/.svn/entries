@@ -1,0 +1,71 @@
+9
+
+dir
+3042
+svn://1.202.197.85/repos/tabs_dev/t_abs1.1/WebRoot/WEB-INF
+svn://1.202.197.85/repos
+
+
+
+2012-06-21T08:51:40.956222Z
+3042
+liangjq
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e5d62243-19f9-4744-bed0-0137dac4ffcb
+
+lib
+dir
+
+web.xml
+file
+
+
+
+
+2012-05-22T09:16:56.406250Z
+aa95f8abc33f60f4ae04e840ae9547d2
+2012-05-18T06:37:50.319195Z
+2487
+baiyx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+683
+
+jsp
+dir
+
+classes
+dir
+

@@ -1,0 +1,35 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 2018032702 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ÏÄÄ¾520\AppData\Local\Temp\RSP8DD3.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/2018032702.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\My Files\Code\vc ++\20180327\2018032702.cpp"
+]
+Creating command line "cl.exe @"C:\Users\ÏÄÄ¾520\AppData\Local\Temp\RSP8DD3.tmp"" 
+<h3>Output Window</h3>
+Compiling...
+2018032702.cpp
+d:\my files\code\vc ++\20180327\2018032702.cpp(6) : error C2057: expected constant expression
+d:\my files\code\vc ++\20180327\2018032702.cpp(6) : error C2466: cannot allocate an array of constant size 0
+d:\my files\code\vc ++\20180327\2018032702.cpp(6) : error C2133: 'a' : unknown size
+d:\my files\code\vc ++\20180327\2018032702.cpp(6) : error C2057: expected constant expression
+d:\my files\code\vc ++\20180327\2018032702.cpp(6) : error C2466: cannot allocate an array of constant size 0
+d:\my files\code\vc ++\20180327\2018032702.cpp(6) : error C2133: 'b' : unknown size
+d:\my files\code\vc ++\20180327\2018032702.cpp(6) : error C2057: expected constant expression
+d:\my files\code\vc ++\20180327\2018032702.cpp(6) : error C2466: cannot allocate an array of constant size 0
+d:\my files\code\vc ++\20180327\2018032702.cpp(6) : error C2133: 'c' : unknown size
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+2018032702.obj - 9 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="page" extends="struts-default">
+			
+		<!-- 1 -->
+		<action name="onlineHelpPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/online_help.jsp
+			</result>
+		</action>
+		
+		<!-- 2 -->
+		<action name="newsPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/news.jsp
+			</result>
+		</action>
+		
+		<!-- 3 -->
+		<action name="newlistPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/newlist.jsp
+			</result>
+		</action>
+		
+		<!-- 4 -->
+		<!--  
+		<action name="mapPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/map.jsp
+			</result>
+		</action>
+		-->
+		
+		<!-- 5 -->
+		<action name="indexLoginedPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/index_logined.jsp
+			</result>
+		</action>
+		
+		<!-- 6 -->
+		<action name="hotlistPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/hotlist.jsp
+			</result>
+		</action>
+		
+		<!-- 7 -->
+		<action name="aboutPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/about.jsp
+			</result>
+		</action>
+		
+		
+		<!-- search 1 -->
+		<action name="submitorderPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/search/submitorder.jsp
+			</result>
+		</action>
+		
+		<!-- search 2 -->
+		<action name="searchflightPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/search/searchflight.jsp
+			</result>
+		</action>
+		
+		<!-- search 3 -->
+		<action name="preorderPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/search/preorder.jsp
+			</result>
+		</action>
+		
+		<!-- search 4 -->
+		<action name="orderdetailPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/search/orderdetail.jsp
+			</result>
+		</action>
+		
+		<!-- search 5 -->
+		<action name="multiwayPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/search/multiway.jsp
+			</result>
+		</action>
+		
+		<!-- search 6 -->
+		<action name="flightstatusPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/search/flightstatus.jsp
+			</result>
+		</action>
+		
+		<!-- account 1 -->
+		<action name="userinfoPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/userinfo.jsp
+			</result>
+		</action>
+		
+		<!-- account 2 -->
+		<action name="userinfoModifyPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/userinfo_modify.jsp
+			</result>
+		</action>
+		
+		<!-- account 3 -->
+		<action name="registerUserPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/register_user.jsp
+			</result>
+		</action>
+		
+		<!-- account 4 -->
+		<action name="registerCompanyPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/register_company.jsp
+			</result>
+		</action>
+		
+		<!-- account 5 -->
+		<action name="registerChoosePage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/register_choose.jsp
+			</result>
+		</action>
+		
+		<!-- account 6 -->
+		<action name="passwordModifyPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/password_modify.jsp
+			</result>
+		</action>
+		
+		<!-- account 7 -->
+		<action name="passengersPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/passengers.jsp
+			</result>
+		</action>
+		
+		<!-- account 8 -->
+		<action name="myordersPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/myorders.jsp
+			</result>
+		</action>
+		
+		<!-- account 9 -->
+		<action name="loginPage" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/login.jsp
+			</result>
+		</action>
+		
+	</package>
+</struts>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="flight" extends="struts-default">
+		<action name="list" 
+		class="com.tarena.tts.abs.action.FlightAction" >
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/search/searchflight.jsp
+			</result>
+		</action>
+		<action name="findFlight" 
+				class="com.tarena.tts.abs.action.FlightAction" 
+				method="getFlight">
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/search/searchflight.jsp
+			</result>
+		</action>
+		<action name="newFlights" 
+			class="com.tarena.tts.abs.action.NewListAction" >
+				<result name="success">
+					${pageContext.request.contextPath}/WEB-INF/jsp/newlist.jsp
+				</result>
+		</action>
+		<action name="newDetail"
+			 class="com.tarena.tts.abs.action.NewDetailAction">
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/news.jsp
+			</result>
+		</action>
+		
+		
+		<action name="hotFlights" 
+			class="com.tarena.tts.abs.action.HotListAction" >
+				<result name="success">
+					${pageContext.request.contextPath}/WEB-INF/jsp/hotlist.jsp
+				</result>
+		</action>
+		
+		<!-- 查找出所有的航班信息，用于"航班动态查询" -->
+		<action name="list01" 
+			class="com.tarena.tts.abs.action.FlightAllAction" >
+				<result name="success">
+					${pageContext.request.contextPath}/WEB-INF/jsp/search/flightstatus.jsp
+				</result>
+		</action>
+	</package>
+</struts>

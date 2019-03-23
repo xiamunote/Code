@@ -1,0 +1,585 @@
+1532051443082	geckodriver	INFO	geckodriver 0.21.0
+1532051443094	geckodriver	INFO	Listening on 127.0.0.1:50418
+1532051445314	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.uP4bTPrkdAqh"
+1532051448845	Marionette	INFO	Listening on port 50429
+1532051449141	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 22120, Chrome_ChildThread] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513
+[Child 22120, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 22120, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 18556, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18556, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 15100, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+e/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 21252, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 22284, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+line 346
+[Parent 23520, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 20108, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20108, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 14696, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 3052, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1532051787994	geckodriver	INFO	geckodriver 0.21.0
+1532051788007	geckodriver	INFO	Listening on 127.0.0.1:50913
+1532051790979	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.FD2Y7OG7ykzY"
+1532051794275	Marionette	INFO	Listening on port 50921
+1532051794354	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 23976, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 23976, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 25652, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 19920, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19920, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 26432, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+1532052011685	geckodriver	INFO	geckodriver 0.21.0
+1532052011699	geckodriver	INFO	Listening on 127.0.0.1:51088
+1532052014669	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.aDwF1hsLeer8"
+1532052017784	Marionette	INFO	Listening on port 51099
+1532052017903	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 25580, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 25580, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 24056, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 24056, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 25580, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 24372, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 24372, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 27316, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1532052057665	geckodriver	INFO	geckodriver 0.21.0
+1532052057679	geckodriver	INFO	Listening on 127.0.0.1:51169
+1532052060646	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.GnYbjtTSshA1"
+*** You are running in headless mode.
+1532052063401	Marionette	INFO	Listening on port 51177
+1532052063868	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052185734	geckodriver	INFO	geckodriver 0.21.0
+1532052185748	geckodriver	INFO	Listening on 127.0.0.1:51282
+1532052188718	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.NYsMBkszPjR7"
+*** You are running in headless mode.
+1532052191863	Marionette	INFO	Listening on port 51293
+1532052191948	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052197227	geckodriver	INFO	geckodriver 0.21.0
+1532052197242	geckodriver	INFO	Listening on 127.0.0.1:51354
+1532052200179	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.LNZXCgyTJADY"
+*** You are running in headless mode.
+1532052203235	Marionette	INFO	Listening on port 51366
+1532052203418	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052208384	geckodriver	INFO	geckodriver 0.21.0
+1532052208398	geckodriver	INFO	Listening on 127.0.0.1:51427
+1532052211362	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.JiIqGZdM4J9L"
+*** You are running in headless mode.
+1532052214305	Marionette	INFO	Listening on port 51440
+1532052214620	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052218748	geckodriver	INFO	geckodriver 0.21.0
+1532052218761	geckodriver	INFO	Listening on 127.0.0.1:51498
+1532052221701	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.KeJAMNc0HBxa"
+*** You are running in headless mode.
+1532052224441	Marionette	INFO	Listening on port 51511
+1532052224930	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052230440	geckodriver	INFO	geckodriver 0.21.0
+1532052230453	geckodriver	INFO	Listening on 127.0.0.1:51572
+1532052233411	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.FClKYc0Q7I0w"
+*** You are running in headless mode.
+1532052236465	Marionette	INFO	Listening on port 51584
+1532052236694	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052526688	geckodriver	INFO	geckodriver 0.21.0
+1532052526702	geckodriver	INFO	Listening on 127.0.0.1:49857
+1532052529675	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.ZuatUGFTWgXU"
+*** You are running in headless mode.
+1532052532360	Marionette	INFO	Listening on port 49868
+1532052532416	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052545331	geckodriver	INFO	geckodriver 0.21.0
+1532052545344	geckodriver	INFO	Listening on 127.0.0.1:49942
+1532052548303	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.YcEdFPJxHHXU"
+*** You are running in headless mode.
+1532052551120	Marionette	INFO	Listening on port 49954
+1532052551514	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052565836	geckodriver	INFO	geckodriver 0.21.0
+1532052565849	geckodriver	INFO	Listening on 127.0.0.1:50066
+1532052568794	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.VSGOlfa0Xzrn"
+*** You are running in headless mode.
+1532052571538	Marionette	INFO	Listening on port 50074
+1532052572015	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052585255	geckodriver	INFO	geckodriver 0.21.0
+1532052585275	geckodriver	INFO	Listening on 127.0.0.1:50146
+1532052588212	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.Zg9hkeVdpN4C"
+*** You are running in headless mode.
+1532052591040	Marionette	INFO	Listening on port 50157
+1532052591440	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052604071	geckodriver	INFO	geckodriver 0.21.0
+1532052604084	geckodriver	INFO	Listening on 127.0.0.1:50224
+1532052607025	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.oXyrezBMn6al"
+*** You are running in headless mode.
+1532052610054	Marionette	INFO	Listening on port 50235
+1532052610286	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052622952	geckodriver	INFO	geckodriver 0.21.0
+1532052622965	geckodriver	INFO	Listening on 127.0.0.1:50309
+1532052625904	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.pk0XfxNCQSF3"
+*** You are running in headless mode.
+1532052629039	Marionette	INFO	Listening on port 50317
+1532052629130	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052640517	geckodriver	INFO	geckodriver 0.21.0
+1532052640530	geckodriver	INFO	Listening on 127.0.0.1:50382
+1532052643464	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" 1532052644434	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" 1532052645086	mozrunner::runner	INFO	Running command: 1532052648384	Marionette	INFO	Listening on port 50403
+1532052648396	Marionette	WARN	TLS certificate errors wi1532052653587	Marionette	INFO	Listening on port 50412
+1532052653883	Marionette	WARN	TLS certificate errors wi1532052654757	Marionette	INFO	Listening on port 50417
+1532052655084	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052668121	geckodriver	INFO	geckodriver 0.21.0
+1532052668134	geckodriver	INFO	Listening on 127.0.0.1:50677
+1532052671019	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.am6F98MJVZXD"
+*** You are running in headless mode.
+1532052677608	Marionette	INFO	Listening on port 50709
+1532052677659	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052686941	geckodriver	INFO	geckodriver 0.21.0
+1532052686956	geckodriver	INFO	Listening on 127.0.0.1:50825
+1532052689849	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.NDUBfoqPIbFl"
+*** You are running in headless mode.
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 31676, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1532052698637	Marionette	INFO	Listening on port 50833
+1532052698690	Marionette	WARN	TLS certificate errorUnable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 315641532052705803	Marionette	INFO	Listening on port 50872
+1532052705900	Marionette	WARN	TLS certificate errors will be ignored for this session
+d VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 2288, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1532052704432	Marionette	INFO	Listening on port 50862
+1532052704714	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052718881	geckodriver	INFO	geckodriver 0.21.0
+1532052718900	geckodriver	INFO	Listening on 127.0.0.1:51101
+1532052721713	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.Fd8tfcET4IeR"
+*** You are running in headless mode.
+1532052729692	Marionette	INFO	Listening on port 51109
+1532052729937	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052739152	geckodriver	INFO	geckodriver 0.21.0
+1532052739166	geckodriver	INFO	Listening on 127.0.0.1:51225
+1532052741997	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.5MFdxAYheHIz"
+*** You are running in headless mode.
+1532052750451	Marionette	INFO	Listening on port 51233
+1532052750735	Marionette	WARN	TLS certificate errors will be ignored for this session
+s\\Firefox\\firefox.exe" "-marionette" 1532052746463	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-f*** You are running in headless mode.
+1532052757310	Marionette	INFO	Listening on port 51256
+Unable to read VR Path Registry from C:\Users\夏木5201532052757451	Marionette	INFO	Listening on port 51261
+1532052757595	Marionette	WARN	TLS certificate errors will be ignored for this session
+rome/common/ipc_channel_win.cc, line 346
+1532052757577	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052773567	geckodriver	INFO	geckodriver 0.21.0
+1532052773581	geckodriver	INFO	Listening on 127.0.0.1:51463
+1532052776333	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.8U6vsMqWX51d"
+*** You are running in headless mode.
+1532052788076	Marionette	INFO	Listening on port 51474
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 33084, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1532052788379	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052793648	geckodriver	INFO	geckodriver 0.21.0
+1532052793680	geckodriver	INFO	Listening on 127.0.0.1:51555
+1532052796330	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.AlAU65yQIV8d"
+*** You are running in headless mode.
+1532052812928	Marionette	INFO	Listening on port 51567
+1532052813365	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 35592, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 29052, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 29052, Chrome_ChildTh*** You are running in headless mode.
+1532052849951	Marionette	INFO	Listening on port 51621
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 35244, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 33000, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 33000, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1532052850322	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052856394	geckodriver	INFO	geckodriver 0.21.0
+1532052856411	geckodriver	INFO	Listening on 127.0.0.1:51863
+1532052859248	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.XMOFDBmtoaJx"
+*** You are running in headless mode.
+1532052863831	Marionette	INFO	Listening on port 51875
+1532052864371	geckodriver	INFO	geckodriver 0.21.0
+1532052864405	geckodriver	INFO	Listen[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+FO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.MOlg47LYmiAI"
+*** You are running in headless mode.
+1532052871400	Marionette	INFO	Listening on port 51922
+1532052871876	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC clor	INFO	geckodriver 0.21.0
+1532052885215	geckodriver	INFO	Listening on 127.0.0.1:52012
+1532052887946	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.C5tLBv78Ncrx"
+*** You are running in headless mode.
+1532052893478	Marionette	INFO	Listening on port 52023
+1532052893970	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052902043	geckodriver	INFO	geckodriver 0.21.0
+1532052902061	geckodriver	INFO	Listening on 127.0.0.1:52080
+1532052904825	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.U3c889FyWyQr"
+*** You are running in headless mode.
+1532052917885	Marionette	INFO	Listening on port 52089
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 37056, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 37056, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc1532052928891	Marionette	INFO	Listening on port 52111
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 37232, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1532052929316	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532052943512	geckodriver	INFO	geckodriver 0.21.0
+1532052943525	geckodriver	INFO	Listening on 127.0.0.1:52255
+1532052946304	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.Rw37xWGddLg9"
+*** You are running in headless mode.
+1532052964696	Marionette	INFO	Listening on port 52265
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 37732, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏�*** You are running in headless mode.
+1532052998692	Marionette	INFO	Listening on port 52500
+1532052998842	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 37968, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 38648, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+round" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.w5XVsBo31K3z"
+*** You are running in headless mode.
+1532053060729	Marionette	INFO	Listening on port 52623
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 38832, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.v1532053066629	Marionette	INFO	Listening on port 52812
+1532053066750	Marionette	WARN	TLS certificate errors will be ignored for this session
+line 346
+[Child 22992, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1532053109902	geckodriver	INFO	geckodriver 0.21.0
+1532053109915	geckodriver	INFO	Listening on 127.0.0.1:53101
+1532053112712	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.fuiFFQzGynTG"
+*** You are running in headless mode.
+1532053121558	Marionette	INFO	Listening on port 53109
+1532053121611	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532053159493	geckodriver	INFO	geckodriver 0.21.0
+1532053159509	geckodriver	INFO	Listening on 127.0.0.1:53278
+1532053162548	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.hsxr9i1th75Q"
+*** You are running in headless mode.
+1532053180983	Marionette	INFO	Listening on port 53289
+1532053183243	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532053229006	geckodriver	INFO	geckodriver 0.21.0
+1532053229078	geckodriver	INFO	Listening on 127.0.0.1:53455
+1532053232036	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.GO6TyMcDaGx2"
+*** You are running in headless mode.
+1532053281563	Marionette	INFO	Listening on port 53472
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 21428, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\夏木520\AppData\Local\openvr\openvrpaths.vrpath
+[Child 39880, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 39880, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1532053645294	geckodriver	INFO	geckodriver 0.21.0
+1532053645311	geckodriver	INFO	Listening on 127.0.0.1:54230
+1532053648324	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.O8cbnEljyVFP"
+*** You are running in headless mode.
+1532053651772	Marionette	INFO	Listening on port 54238
+1532053651896	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532053690246	geckodriver	INFO	geckodriver 0.21.0
+1532053690262	geckodriver	INFO	Listening on 127.0.0.1:54358
+1532053693268	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.WH9S8ZAzkYke"
+*** You are running in headless mode.
+1532053696453	Marionette	INFO	Listening on port 54370
+1532053696532	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2D0107,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1532053998764	geckodriver	INFO	geckodriver 0.21.0
+1532053998780	geckodriver	INFO	Listening on 127.0.0.1:54734
+1532054001793	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.HkqjX4ggaLre"
+*** You are running in headless mode.
+1532054005208	Marionette	INFO	Listening on port 54745
+1532054005314	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+1532054053941	geckodriver	INFO	geckodriver 0.21.0
+1532054053957	geckodriver	INFO	Listening on 127.0.0.1:54858
+1532054056926	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.CxPEAeWSuMIV"
+*** You are running in headless mode.
+1532054060256	Marionette	INFO	Listening on port 54866
+1532054060343	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532054333953	geckodriver	INFO	geckodriver 0.21.0
+1532054333969	geckodriver	INFO	Listening on 127.0.0.1:55380
+1532054336938	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.wZnxhR14Brpd"
+*** You are running in headless mode.
+1532054340073	Marionette	INFO	Listening on port 55391
+1532054340217	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532054670808	geckodriver	INFO	geckodriver 0.21.0
+1532054670839	geckodriver	INFO	Listening on 127.0.0.1:55737
+1532054673824	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.TvH39is7XjEo"
+*** You are running in headless mode.
+1532054679373	Marionette	INFO	Listening on port 55745
+1532054679450	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=Abnorm21.0
+1532054727774	geckodriver	INFO	Listening on 127.0.0.1:55843
+1532054730743	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.Idae9KUihWmX"
+*** You are running in headless mode.
+1532054733991	Marionette	INFO	Listening on port 55853
+1532054734085	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532054781639	geckodriver	INFO	geckodriver 0.21.0
+1532054781655	geckodriver	INFO	Listening on 127.0.0.1:55939
+1532054784640	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.XYEIkLXyBUkV"
+*** You are running in headless mode.
+1532054787824	Marionette	INFO	Listening on port 55950
+1532054787934	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532054834893	geckodriver	INFO	geckodriver 0.21.0
+1532054834909	geckodriver	INFO	Listening on 127.0.0.1:56054
+1532054837878	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.wgv0gj5VRyvf"
+*** You are running in headless mode.
+1532054841124	Marionette	INFO	Listening on port 56065
+1532054841228	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2D0107,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1532054943408	geckodriver	INFO	geckodriver 0.21.0
+1532054943423	geckodriver	INFO	Listening on 127.0.0.1:56193
+1532054946408	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.M4IzPCB9T3vM"
+*** You are running in headless mode.
+1532054949950	Marionette	INFO	Listening on port 56201
+1532054950202	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532054998133	geckodriver	INFO	geckodriver 0.21.0
+1532054998149	geckodriver	INFO	Listening on 127.0.0.1:56306
+1532055001117	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.VHwZb5SBOuTl"
+*** You are running in headless mode.
+1532055004308	Marionette	INFO	Listening on port 56315
+1532055004453	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+031153	geckodriver	INFO	Listening on 127.0.0.1:57264
+1532056034137	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.sBAycorFtbyR"
+*** You are running in headless mode.
+1532056037625	Marionette	INFO	Listening on port 57275
+1532056037802	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+1532056642666	geckodriver	INFO	geckodriver 0.21.0
+1532056642697	geckodriver	INFO	Listening on 127.0.0.1:58097
+1532056645682	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.w9qzMgsgs8II"
+*** You are running in headless mode.
+1532056649166	Marionette	INFO	Listening on port 58106
+1532056649613	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532056697238	geckodriver	INFO	geckodriver 0.21.0
+1532056697253	geckodriver	INFO	Listening on 127.0.0.1:58205
+1532056700238	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.IaHqVy2U4u8z"
+*** You are running in headless mode.
+1532056703828	Marionette	INFO	Listening on port 58220
+1532056704205	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532056873515	geckodriver	INFO	geckodriver 0.21.0
+1532056873531	geckodriver	INFO	Listening on 127.0.0.1:58428
+1532056876515	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.sXP6hgAoaJsY"
+*** You are running in headless mode.
+1532056879985	Marionette	INFO	Listening on port 58439
+1532056880142	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532056928128	geckodriver	INFO	geckodriver 0.21.0
+1532056928143	geckodriver	INFO	Listening on 127.0.0.1:58532
+1532056931112	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.hV0OJbnMx0E8"
+*** You are running in headless mode.
+1532056934181	Marionette	INFO	Listening on port 58543
+1532056934465	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532070476436	geckodriver	INFO	geckodriver 0.21.0
+1532070476454	geckodriver	INFO	Listening on 127.0.0.1:54294
+1532070479464	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.BE5SsERDJhRW"
+*** You are running in headless mode.
+1532070490192	Marionette	INFO	Listening on port 54307
+1532070490384	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532070539451	geckodriver	INFO	geckodriver 0.21.0
+1532070539467	geckodriver	INFO	Listening on 127.0.0.1:54461
+1532070542458	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.JmmatLn9d5zP"
+*** You are running in headless mode.
+1532070545707	Marionette	INFO	Listening on port 54475
+1532070545849	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532070593314	geckodriver	INFO	geckodriver 0.21.0
+1532070593331	geckodriver	INFO	Listening on 127.0.0.1:54586
+1532070596327	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.apl0lRPqqdk1"
+*** You are running in headless mode.
+1532070599590	Marionette	INFO	Listening on port 54596
+1532070599763	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.DcGJdsLoAQel"
+*** You are running in headless mode.
+1532070653849	Marionette	INFO	Listening on port 54703
+1532070654198	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16008C,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x16007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2D0107,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2D0107,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2D0107,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2D0107,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2D002C,name=PContent::Msg_AddPermission) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2D002C,name=PContent::Msg_AddPermission) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2D002C,name=PContent::Msg_AddPermission) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2D0107,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+1532070717017	geckodriver	INFO	geckodriver 0.21.0
+1532070717034	geckodriver	INFO	Listening on 127.0.0.1:54822
+1532070720017	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.1SbQj4HmDhsr"
+*** You are running in headless mode.
+1532070723534	Marionette	INFO	Listening on port 54833
+1532070724003	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532070772953	geckodriver	INFO	geckodriver 0.21.0
+1532070772972	geckodriver	INFO	Listening on 127.0.0.1:54935
+1532070775955	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.JINbovMBHOqz"
+*** You are running in headless mode.
+1532070779324	Marionette	INFO	Listening on port 54953
+1532070779826	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532070829936	geckodriver	INFO	geckodriver 0.21.0
+1532070829952	geckodriver	INFO	Listening on 127.0.0.1:55074
+1532070832937	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.lb1MyjgVvps4"
+*** You are running in headless mode.
+1532070836586	Marionette	INFO	Listening on port 55090
+1532070836631	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532070885289	geckodriver	INFO	geckodriver 0.21.0
+1532070885306	geckodriver	INFO	Listening on 127.0.0.1:55196
+1532070888293	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.vnqtMj7RTtPv"
+*** You are running in headless mode.
+1532070891547	Marionette	INFO	Listening on port 55207
+1532070891656	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532070940217	geckodriver	INFO	geckodriver 0.21.0
+1532070940233	geckodriver	INFO	Listening on 127.0.0.1:55292
+1532070943231	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.puCN1aVgecOa"
+*** You are running in headless mode.
+1532070946748	Marionette	INFO	Listening on port 55301
+1532070947098	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532071124725	geckodriver	INFO	geckodriver 0.21.0
+1532071124741	geckodriver	INFO	Listening on 127.0.0.1:55500
+1532071127732	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.MO1fq85QSehf"
+*** You are running in headless mode.
+1532071131107	Marionette	INFO	Listening on port 55508
+1532071132501	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532071180792	geckodriver	INFO	geckodriver 0.21.0
+1532071180808	geckodriver	INFO	Listening on 127.0.0.1:55656
+1532071183807	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.GMDvyUrJBlJ8"
+*** You are running in headless mode.
+1532071191057	Marionette	INFO	Listening on port 55669
+1532071191456	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532071239401	geckodriver	INFO	geckodriver 0.21.0
+1532071239420	geckodriver	INFO	Listening on 127.0.0.1:55796
+1532071242403	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.b7MHD5AHKtbr"
+*** You are running in headless mode.
+1532071247794	Marionette	INFO	Listening on port 55804
+1532071247836	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532071296144	geckodriver	INFO	geckodriver 0.21.0
+1532071296162	geckodriver	INFO	Listening on 127.0.0.1:55920
+1532071299146	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.0Eq1uqiKaGyC"
+*** You are running in headless mode.
+1532071305851	Marionette	INFO	Listening on port 55935
+1532071306301	Marionette	WARN	TLS certificate errors will be ignored for this session
+1532071355549	geckodriver	INFO	geckodriver 0.21.0
+1532071355566	geckodriver	INFO	Listening on 127.0.0.1:56061
+1532071358563	mozrunner::runner	INFO	Running command: "F:\\Program Files\\Firefox\\firefox.exe" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\夏木520\\AppData\\Local\\Temp\\rust_mozprofile.QuyEwzq5dvVi"
+*** You are running in headless mode.
+1532071365726	Marionette	INFO	Listening on port 56072
+1532071365731	Marionette	WARN	TLS certificate errors will be ignored for this session

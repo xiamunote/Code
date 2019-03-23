@@ -1,0 +1,53 @@
+//用二叉树,帮助旅行者从n件物品中挑选出总价值最优而总重量不超过
+#include<iostream.h>
+void readdata(); 
+void search(int); 
+void checkmax(); 
+void printresult(); 
+int c=35, n=10; //c： 背包容量；n：物品数 
+int w[10], v[10]; //w[i]、v[i]：第i件物品的重量和价值 
+int a[10], max; //a数组存放当前解各物品选取情况；max：记录最大价值 
+//a[i]=0表示不选第i件物品，a[i]=1表示选第i件物品 
+int main() 
+{ 
+	readdata(); //读入数据 search(0); //递归搜索 
+	printresult(); 
+	return 0;
+} 
+void search(int m) 
+{ 
+	if(m>=n) 
+		checkmax(); //检查当前解是否是可行解，若是则把它的价值与max比较 
+	else 
+	{ 
+		a[m]=0; //不选第m件物品 
+		search(m+1); //递归搜索下一件物品 
+		a[m]=1; //不选第m件物品 
+		search(m+1); //递归搜索下一件物品 
+	} 
+} 
+void checkmax() 
+{ 
+	int i, weight=0, value=0; 
+	for(i=0;i<n;i++)
+	{ 
+		if(a[i]==1) //如果选取了该物品 
+		{ 
+			weight = weight + w[i]; //累加重量 
+			value = value + v[i]; //累加价值 
+		} 
+	} 
+	if(weight<=c) //若为可行解 
+		if(value>max) //且价值大于max 
+			max=value; //替换max 
+} 
+void readdata() 
+{ 
+	int i; 
+	for(i=0;i<n;i++) 
+		cin>>w[i]>>v[i];//读入第i件物品重量和价值 
+} 
+void printresult() 
+{ 
+	cout<<max<<endl; 
+} 

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.vp.dao.BookInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.vp.pojo.BookInfo" >
+    <id column="book_code" property="bookCode" jdbcType="VARCHAR" />
+    <result column="book_name" property="bookName" jdbcType="VARCHAR" />
+   <!-- <result column="book_type" property="bookType" jdbcType="INTEGER" />-->
+    <result column="book_author" property="bookAuthor" jdbcType="VARCHAR" />
+    <result column="publish_press" property="publishPress" jdbcType="VARCHAR" />
+    <result column="publish_date" property="publishDate" jdbcType="DATE" />
+    <result column="is_borrow" property="isBorrow" jdbcType="INTEGER" />
+    <result column="imagePath" property="imagepath" jdbcType="VARCHAR" />
+    <association property="bookType" javaType="BookType">
+      <id property="id" column="id"></id>
+      <result property="typeName"  column="type_name"></result>
+    </association>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    book_code, book_name, book_type, book_author, publish_press, publish_date, is_borrow, 
+    imagePath
+  </sql>
+
+  <delete id="deleteByBookID">
+    DELETE   from book_info where book_code IN
+    <foreach collection="list" open="(" close=")" separator="," item="code" >
+       #{code}
+    </foreach>
+
+
+  </delete>
+
+
+  <select id="queryBook" resultMap="BaseResultMap">
+    SELECT
+    book_info.book_code,
+    book_info.book_name,
+    book_info.book_author,
+    book_info.publish_press,
+    book_info.publish_date,
+    book_info.is_borrow,
+    book_type.id,
+    book_info.imagePath,
+    book_type.type_name
+    FROM
+    book_info
+    INNER JOIN book_type ON book_info.book_type = book_type.id
+    <where>
+      <if test="bookTypeid!=0">
+        and  book_type.id=#{bookTypeid}
+      </if>
+      <if test="bookname !=null">
+        and book_info.book_name like CONCAT('%',#{bookname},'%')
+      </if>
+      <if test="borrow !=-1">
+        and book_info.is_borrow=#{borrow}
+      </if>
+
+    </where>
+
+  </select>
+
+
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    SELECT
+    book_info.book_code,
+    book_info.book_name,
+    book_info.book_author,
+    book_info.publish_press,
+    book_info.publish_date,
+    book_info.is_borrow,
+    book_type.id,
+    book_info.imagePath,
+    book_type.type_name
+    FROM
+    book_info
+    INNER JOIN book_type ON book_info.book_type = book_type.id
+    where book_code = #{bookCode,jdbcType=VARCHAR}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from book_info
+    where book_code = #{bookCode,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.vp.pojo.BookInfo" >
+    insert into book_info (book_code, book_name, book_type, 
+      book_author, publish_press, publish_date, 
+      is_borrow, imagePath)
+    values (#{bookCode,jdbcType=VARCHAR}, #{bookName,jdbcType=VARCHAR}, #{bookType.id,jdbcType=INTEGER},
+      #{bookAuthor,jdbcType=VARCHAR}, #{publishPress,jdbcType=VARCHAR}, #{publishDate,jdbcType=DATE}, 
+      #{isBorrow,jdbcType=INTEGER}, #{imagepath,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.vp.pojo.BookInfo" >
+    insert into book_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="bookCode != null" >
+        book_code,
+      </if>
+      <if test="bookName != null" >
+        book_name,
+      </if>
+      <if test="bookType != null" >
+        book_type,
+      </if>
+      <if test="bookAuthor != null" >
+        book_author,
+      </if>
+      <if test="publishPress != null" >
+        publish_press,
+      </if>
+      <if test="publishDate != null" >
+        publish_date,
+      </if>
+      <if test="isBorrow != null" >
+        is_borrow,
+      </if>
+      <if test="imagepath != null" >
+        imagePath,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="bookCode != null" >
+        #{bookCode,jdbcType=VARCHAR},
+      </if>
+      <if test="bookName != null" >
+        #{bookName,jdbcType=VARCHAR},
+      </if>
+      <if test="bookType != null" >
+        #{bookType.id,jdbcType=INTEGER},
+      </if>
+      <if test="bookAuthor != null" >
+        #{bookAuthor,jdbcType=VARCHAR},
+      </if>
+      <if test="publishPress != null" >
+        #{publishPress,jdbcType=VARCHAR},
+      </if>
+      <if test="publishDate != null" >
+        #{publishDate,jdbcType=DATE},
+      </if>
+      <if test="isBorrow != null" >
+        #{isBorrow,jdbcType=INTEGER},
+      </if>
+      <if test="imagepath != null" >
+        #{imagepath,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.vp.pojo.BookInfo" >
+    update book_info
+    <set >
+      <if test="bookName != null" >
+        book_name = #{bookName,jdbcType=VARCHAR},
+      </if>
+      <if test="bookType != null" >
+        book_type = #{bookType.id,jdbcType=INTEGER},
+      </if>
+      <if test="bookAuthor != null" >
+        book_author = #{bookAuthor,jdbcType=VARCHAR},
+      </if>
+      <if test="publishPress != null" >
+        publish_press = #{publishPress,jdbcType=VARCHAR},
+      </if>
+      <if test="publishDate != null" >
+        publish_date = #{publishDate,jdbcType=DATE},
+      </if>
+      <if test="isBorrow != null" >
+        is_borrow = #{isBorrow,jdbcType=INTEGER},
+      </if>
+      <if test="imagepath != null" >
+        imagePath = #{imagepath,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where book_code = #{bookCode,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.vp.pojo.BookInfo" >
+    update book_info
+    set book_name = #{bookName,jdbcType=VARCHAR},
+      book_type = #{bookType.id,jdbcType=INTEGER},
+      book_author = #{bookAuthor,jdbcType=VARCHAR},
+      publish_press = #{publishPress,jdbcType=VARCHAR},
+      publish_date = #{publishDate,jdbcType=DATE},
+      is_borrow = #{isBorrow,jdbcType=INTEGER},
+      imagePath = #{imagepath,jdbcType=VARCHAR}
+    where book_code = #{bookCode,jdbcType=VARCHAR}
+  </update>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="order" extends="struts-default">
+		
+		<action name="listOrder"
+			class="com.tarena.tts.abs.action.TicketOrderAction">
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/account/myorders.jsp
+			</result>
+		</action>
+		
+		<action name="getOrderdetail"
+			class="com.tarena.tts.abs.action.OrderdetailAction">
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/search/orderdetail.jsp
+			</result>
+		</action>
+
+		<action name="submitorder"
+			class="com.tarena.tts.abs.action.SubmitorderAction">
+			<result name="success">
+				${pageContext.request.contextPath}/WEB-INF/jsp/search/submitorder.jsp
+			</result>
+		</action>
+	</package>
+</struts>

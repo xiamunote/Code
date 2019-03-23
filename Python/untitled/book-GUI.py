@@ -1,0 +1,11 @@
+import tkinter
+root = tkinter.Tk()
+textName = tkinter.Entry(root,textvariable = '用户名')
+textPassword = tkinter.Entry(root,textvariable = '密码')
+btLogin = tkinter.Button(root,text = '登录')
+btRegist = tkinter.Button(root,text = '注册')
+textName.pack()
+textPassword.pack()
+btLogin.pack()
+btRegist.pack()
+root.mainloop()

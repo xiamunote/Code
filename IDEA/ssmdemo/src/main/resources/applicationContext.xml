@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<!--1.加载db.properties-->
+	<context:property-placeholder location="classpath:db.properties"></context:property-placeholder>
+
+	 <!--2.数据源-->
+     <bean id="druidDataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+       <property name="username" value="${jdbc_username}"></property>
+		 <property name="password" value="${jdbc_password}"></property>
+		 <property name="url" value="${jdbc_url}"></property>
+         <property name="maxActive" value="30"></property>
+		 <property name="minIdle" value="5"></property>
+	     <property name="initialSize" value="10"></property>
+	 </bean>
+	  <!-- 3.sqlsessionfactory-->
+	  <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		    <property name="dataSource" ref="druidDataSource"></property>
+		   <property name="mapperLocations" value="classpath:mapper/*.xml"></property>
+           <property name="typeAliasesPackage" value="com.vp.pojo"></property>
+		  <!-- 4.4配置PageHelper的参数实现分页 -->
+		  <property name="plugins">
+			  <array>
+				  <bean class="com.github.pagehelper.PageInterceptor">
+					  <property name="properties">
+						  <value>
+							  helperDialect=mysql
+							  reasonable=true
+						  </value>
+					  </property>
+				  </bean>
+			  </array>
+		  </property>
+	  </bean>
+       <!-- 4.将映射文件与接口建立关联 形成链式编程-->
+     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		 <property name="basePackage" value="com.vp.dao"></property>
+		 <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+	 </bean>
+
+	  <!-- spring-->
+	 <!-- 1。开启扫描器和ioc的注解-->
+	  <context:component-scan base-package="com.vp"></context:component-scan>
+	<context:annotation-config></context:annotation-config>
+	  <!--2.开启声明式事务的注解-->
+	     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+			 <property name="dataSource" ref="druidDataSource"></property>
+		 </bean>
+
+	    <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
+
+	   <aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>
+
+</beans>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+	<property name="connection.url">
+	jdbc:mysql://localhost:3306/t_abs?useUnicode=true&amp;characterEncoding=utf-8</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">root</property>
+	<property name="connection.driver_class">
+		com.mysql.jdbc.Driver
+	</property>
+	
+	<property name="dialect">
+		org.hibernate.dialect.MySQLDialect
+	</property>
+	<property name="hibernate.show_sql">true</property>
+	<property name="hibernate.format_sql">true</property>
+
+	
+	<mapping resource="com/tarena/tts/abs/entity/mapping/User.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/Membership.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/Airport.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/Branch.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/BusinessRecord.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/CabinClass.hbm.xml" />
+	<mapping resource="com/tarena/tts/abs/entity/mapping/City.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/Flight.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/FlightPlan.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/MileageDetail.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/Passenger.hbm.xml" />
+	<mapping resource="com/tarena/tts/abs/entity/mapping/Plane.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/Province.hbm.xml" />
+	<mapping resource="com/tarena/tts/abs/entity/mapping/Route.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/Ticket.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/TicketOrder.hbm.xml" />
+	<mapping
+		resource="com/tarena/tts/abs/entity/mapping/Information.hbm.xml" />
+
+</session-factory>
+</hibernate-configuration>

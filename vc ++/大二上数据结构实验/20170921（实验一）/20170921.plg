@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 20170921 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPD60E.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/20170921.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"D:\新建文件夹\20170921\2017092102.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPD60E.tmp" 
+<h3>Output Window</h3>
+Compiling...
+2017092102.cpp
+d:\新建文件夹\20170921\btnode.h(9) : error C2953: 'BTNode' : template class has already been defined
+        d:\新建文件夹\20170921\btnode.h(9) : see declaration of 'BTNode'
+d:\新建文件夹\20170921\vector.h(44) : error C2953: 'Vector' : template class has already been defined
+        d:\新建文件夹\20170921\vector.h(44) : see declaration of 'Vector'
+d:\新建文件夹\20170921\vector.h(59) : error C2995: '=' : template function has already been defined
+        d:\新建文件夹\20170921\vector.h(18) : see declaration of '='
+d:\新建文件夹\20170921\vector.h(69) : error C2995: 'Erase' : template function has already been defined
+        d:\新建文件夹\20170921\vector.h(42) : see declaration of 'Erase'
+d:\新建文件夹\20170921\vector.h(81) : error C2995: 'Insert' : template function has already been defined
+        d:\新建文件夹\20170921\vector.h(41) : see declaration of 'Insert'
+d:\新建文件夹\20170921\vector.h(93) : error C2995: 'Reserve' : template function has already been defined
+        d:\新建文件夹\20170921\vector.h(39) : see declaration of 'Reserve'
+d:\新建文件夹\20170921\vector.h(103) : error C2995: 'Resize' : template function has already been defined
+        d:\新建文件夹\20170921\vector.h(40) : see declaration of 'Resize'
+d:\新建文件夹\20170921\2017092102.cpp(8) : error C2079: 'L' uses undefined class 'Vector<char>'
+d:\新建文件夹\20170921\2017092102.cpp(11) : error C2228: left of '.Push_back' must have class/struct/union type
+d:\新建文件夹\20170921\2017092102.cpp(12) : error C2784: 'struct BTNode<T> *__cdecl MakeLinked(const class Vector<T> &)' : could not deduce template argument for 'const class Vector<T> &' from 'int'
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+2017092102.obj - 10 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
